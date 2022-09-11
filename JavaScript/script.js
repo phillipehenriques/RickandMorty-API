@@ -4,3 +4,7 @@ function getAllCaracters() {
         .catch(error => Promise.reject(error));
 }
 
+let select = document.querySelector('select')
+funcionarios.forEach((element) => {
+    select.options.add(new Option(element.nome, element.id))
+})
