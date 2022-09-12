@@ -37,9 +37,21 @@
 
 * {
     margin: 0px;
-    padding: 0px;
-    
+    padding: 0px;   
 }
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+.rotate {
+    animation: rotation 28s infinite linear;
+  }
 
 a {
     margin: 6px;
@@ -53,6 +65,19 @@ a:hover {
     color: #FF9800;
 }
 
+.a-class {
+    margin: 6px;
+    font-size: 20px;
+    color: #FF9800;
+    transition: 0.4s;
+}
+
+.a-class:hover {
+    margin: 6px;
+    font-size: 20px;
+    color: #fff;
+}
+
 picture > img {
     width: 90%;
     height: auto;
@@ -60,7 +85,7 @@ picture > img {
     transition: 0.4s;
 }
 
-img:hover {
+picture > img:hover {
     scale: 1.03;
 }
 
@@ -130,7 +155,6 @@ footer {
     width: 100%;
     height: 8vh;
     margin-top: 1vh;
-
 }
 
 nav {
@@ -155,6 +179,25 @@ label {
 
 .container {
     width: 70%;
+}
+
+.ajuste {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+.ajuste:hover {
+    width: 55px;
+    height: 5.3vh;
+    border-radius: 8px;
+}
+
+.rotation-div {
+    position: fixed;
+    left: 9vw;
+    top: 18vh;
 }
 
 .season {
@@ -196,7 +239,6 @@ label {
     min-width: 100px;
     height: 35vh;
     margin: 10px;
-    gap: 1%;
 }
 
 .card {
@@ -253,6 +295,7 @@ label {
     background-color: var(--cor01);
     border-radius: 8px;
     border-color: black;
+    color: #000;
     border-style: groove;
     display: flex;
     flex-direction: column;
@@ -267,6 +310,7 @@ label {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    color: black;
     gap: 4px;
 }
 
@@ -326,6 +370,7 @@ label {
 
 .list-columns {
     background-color: white;
+    transition: 0.5s;
     border-radius: 8px;
     width: 51px;
     height: 5vh;
@@ -339,7 +384,6 @@ label {
 .list-columns:hover {
     background-color: #FF9800;
     color: white;
-    
 }
 
 .check-config {
