@@ -13,32 +13,35 @@
         <div class="logo">
             <img src="imagens/nav-logo.png" alt="">
         </div>
-        <div>
-            <a href="#">CLIQUE</a>
-            <a href="#">CLIQUE</a>
-            <a href="#">CLIQUE</a>
-            <a href="#">CLIQUE</a>
+        <div style="color: #fff">            
+            <a href="https://github.com/phillipehenriques">GitHub</a> |
+            <a href="https://rickandmortyapi.com/" style="color: #FF9800">API Rick and Morty</a> |
+            <a href="https://www.linkedin.com/in/phillipehenriques/">Linkedin</a>
         </div> 
     </nav>
     <main>
         <section>
             <div class="subsection">
-                <div class="card-image">
+                <div class="#">
                     <picture>
-                        <img src="imagens/nav-logo.png" alt="">
+                        <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="">
                     </picture>
                 </div>
                 <div class="card">
-                    <h2 id="name" class="characterName">Nome do personagem</h2>                    
+                  
                     <div class="card-table">
                         <div class="label">
+                            <label>Nome</label>
                             <label>Espécie</label>
-                            <label>Espécie</label>
-                            <label>Espécie</label>
+                            <label>Status</label>
+                            <label>Local</label>
                         </div>
                         <div class="rows">
+                            <h3>Rick Sanches</h3>
                             <div id="classe" class="card-row"></div>
-                            <div id="status" class="card-row"></div>
+                            <div class="status-box">
+                                <div id="color" class="card-row-color"></div><div id="status" class="card-row-status"></div>
+                            </div>
                             <div id="local" class="card-row"></div>
                         </div>                       
                     </div>
@@ -50,10 +53,89 @@
             <div class="season">
                 <div class="seletor">
                     <label>Escolha a temporada:</label>
-                    <select name="" id="seletor">Selecione a temporada</select>
+                    <div class="box-seasons">
+                        <div class="check-config">Season 1</div>
+                        <div class="check-config">Season 2</div>
+                        <div class="check-config">Season 3</div>
+                        <div class="check-config">Season 4</div>
+                        <div class="check-config">Season 5</div>
+                        <div class="check-config">Season 6</div>
+                        <div class="check-config">Season 7</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="list">
+                <div class="list-row">
+                    <div class="list-columns">FOTO</div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                </div>
+                <div class="list-row">
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                </div>
+                <div class="list-row">
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                </div>
+                <div class="list-row">
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                </div>
+                <div class="list-row">
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
+                    <div class="list-columns"></div>
                 </div>
             </div>
         </section>
     </main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./JavaScript/script.js"></script>
 </body>
 </html>
