@@ -1,10 +1,19 @@
+
+
 function getAllCaracters() {
     return axios.get('https://rickandmortyapi.com/api/character')
-        .then(response => Promise.resolve(response))
-        .catch(error => Promise.reject(error));
+        .then(response => response)
+        .catch(error => error);
 }
 
-let select = document.querySelector('select')
-funcionarios.forEach((element) => {
-    select.options.add(new Option(element.nome, element.id))
-})
+// const personagens = getAllCaracters();
+
+// personagens.forEach((element) => {
+//     console.log(element)
+// })
+
+const nameCharacter = document.getElementById('name')
+const classCharacter = document.getElementById('class')
+const colorBox = document.getElementById('color')
+const statusCharacter = document.getElementById('status')
+const localCharacter = document.getElementById('local')

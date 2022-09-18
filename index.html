@@ -38,8 +38,10 @@
                         <label>Local</label>
                     </div>
                     <div class="rows">
-                        <h3>Rick Sanchez</h3>
-                        <div id="classe" class="card-row">This character is a Human</div>
+                        <div id="name">
+                            <h3>Rick Sanchez</h3>
+                        </div>
+                        <div id="class" class="card-row">This character is a Human</div>
                         <div class="status-box">
                             <div id="color" style="background-color: green" class="card-row-color"></div>
                             <div id="status" class="card-row-status">This character is Alive</div>
@@ -160,6 +162,19 @@
     </section>
     </main>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+    function getAllCaracters() {
+    return axios.get('https://rickandmortyapi.com/api/character')
+            .then(response => response)
+            .catch(error => error);
+    }
+
+    const personagens = getAllCaracters();
+
+    personagens.forEach((element) => {
+        console.log(element)
+    })
+        </script>
     <script src="./JavaScript/script.js"></script>
 </body>
 </html>
