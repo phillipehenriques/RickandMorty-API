@@ -10,10 +10,10 @@ function getAllCaracters() {
 //     element.result.image
 // })
 
-const photoCharacter = document.getElementById('photo').innerHTML = personagens.results.image
-const nameCharacter = document.getElementById('name')
-const classCharacter = document.getElementById('class')
-const colorBox = document.getElementById('color')
-const statusCharacter = document.getElementById('status')
-const localCharacter = document.getElementById('local')
+// const photoCharacter = document.getElementById('photo').innerHTML = personagens.results.image
+// const nameCharacter = document.getElementById('name')
+// const classCharacter = document.getElementById('class')
+// const colorBox = document.getElementById('color')
+// const statusCharacter = document.getElementById('status')
+// const localCharacter = document.getElementById('local')
 
