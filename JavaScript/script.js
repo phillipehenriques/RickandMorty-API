@@ -4,16 +4,16 @@ function getAllCaracters() {
         .catch(error => error);
 }
 
-// const personagens = getAllCaracters();
+const personagens = getAllCaracters();
 
-// personagens.forEach((element) => {
-//     element.result.image
-// })
+personagens.forEach((element) => {
+    element.result.image
+})
 
-// const photoCharacter = document.getElementById('photo').innerHTML = personagens.results.image
-// const nameCharacter = document.getElementById('name')
-// const classCharacter = document.getElementById('class')
-// const colorBox = document.getElementById('color')
-// const statusCharacter = document.getElementById('status')
-// const localCharacter = document.getElementById('local')
+document.getElementById('photo').innerHTML = personagens['results']['image']
+const nameCharacter = document.getElementById('name')
+const classCharacter = document.getElementById('class')
+const colorBox = document.getElementById('color')
+const statusCharacter = document.getElementById('status')
+const localCharacter = document.getElementById('local')
 
