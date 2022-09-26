@@ -11,9 +11,9 @@ personagens.forEach((element) => {
 })
 
 document.getElementById('photo').innerHTML = personagens['results']['image']
-const nameCharacter = document.getElementById('name')
-const classCharacter = document.getElementById('class')
-const colorBox = document.getElementById('color')
-const statusCharacter = document.getElementById('status')
-const localCharacter = document.getElementById('local')
+document.getElementById('name').innerHTML = personagens['results']['name']
+document.getElementById('class').innerHTML = personagens['results']['']
+document.getElementById('color').innerHTML = personagens['results']['']
+document.getElementById('status').innerHTML = personagens['results']['']
+document.getElementById('local').innerHTML = personagens['results']['']
 
