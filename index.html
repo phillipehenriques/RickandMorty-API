@@ -170,19 +170,6 @@
     </section>
     </main>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script>
-    function getAllCaracters() {
-    return axios.get('https://rickandmortyapi.com/api/character')
-            .then(response => response)
-            .catch(error => error);
-    }
-
-    const personagens = getAllCaracters();
-
-    personagens.forEach((element) => {
-        console.log(element)
-    })
-        </script>
-    <script src="./JavaScript/script.js"></script>
+    <script src="JavaScript/script.js"></script>
 </body>
 </html>
